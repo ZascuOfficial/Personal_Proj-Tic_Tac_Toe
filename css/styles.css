@@ -12,5 +12,38 @@
   --green: #a7c957;
 
   --violet: #9d4edd;
-  --cyan: #07beb8;
+  --cyan: #348a87;
+}
+
+/* Type / General
+========================= */
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--light-gray);
+}
+
+/* Header Section
+========================= */
+
+header {
+  padding-block: 25px;
+  text-align: center;
+  background-color: var(--light-blue);
+  color: var(--cement-color);
+  border-bottom: 10px solid var(--dark-blue);
+  box-shadow: 0 5px 10px rgba(65, 65, 65, 0.25);
+}
+
+#header {
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 2px var(--dark-blue);
+}
+
+header > p {
+  font-size: 17px;
+  font-weight: 300;
 }
