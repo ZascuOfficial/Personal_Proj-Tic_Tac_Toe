@@ -47,3 +47,59 @@ header > p {
   font-size: 17px;
   font-weight: 300;
 }
+
+/* Main Section
+========================= */
+
+.container {
+  padding: 75px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.stats {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: var(--light-blue);
+  color: var(--dark-gray);
+  border-bottom: 10px solid var(--dark-blue);
+  box-shadow: 0 5px 10px rgba(65, 65, 65, 0.25);
+}
+
+.stats > h3 {
+  padding: 25px 100px;
+  font-size: 25px;
+  font-weight: 800;
+  color: var(--white);
+  text-shadow: 0 0 var(--dark-gray);
+}
+
+#player { background-color: var(--violet); }
+#computer { background-color: var(--cyan); }
+
+#player-wins, #computer-wins {
+  padding: 35px;
+  font-size: 18px;
+}
+
+/* Grid
+--------------- */
+
+.grid {
+  min-width: 500px;
+  height: 500px;
+  display: grid;
+  gap: 3px;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  background-color: var(--dark-gray);
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 600;
+  background-color: var(--light-gray);
+}
