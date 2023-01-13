@@ -44,7 +44,13 @@ header {
 }
 
 header > p {
+  margin-bottom: 5px;
   font-size: 17px;
+  font-weight: 400;
+}
+
+header > p:last-child {
+  font-size: 15px;
   font-weight: 300;
 }
 
@@ -96,7 +102,7 @@ header > p {
 .grid {
   min-width: 500px;
   height: 500px;
-  margin-bottom: 35px;
+  margin-bottom: 50px;
   display: grid;
   gap: 3px;
   grid-template: repeat(3, 1fr) / repeat(3, 1fr);
@@ -126,6 +132,18 @@ header > p {
   border: none;
   border-bottom: 7px solid var(--dark-blue);
   box-shadow: 0 5px 10px rgba(65, 65, 65, 0.25);
+  transition: ease-in-out 50ms;
+}
+
+#play-btn:hover {
+  transition: ease-in-out 100ms;
+  box-shadow: 0 5px 15px rgba(70, 70, 70, 0.4);
+}
+
+#play-btn:active {
+  background-color: var(--white);
+  color: var(--dark-gray);
+  border-color: var(--cyan);
 }
 
 #narrator-element {
