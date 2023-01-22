@@ -82,10 +82,10 @@ header > p:last-child {
   text-shadow: 0 0 var(--dark-gray);
 }
 
-#player { background-color: var(--violet); }
-#computer { background-color: var(--cyan); }
+#player-1 { background-color: var(--violet); }
+#player-2 { background-color: var(--cyan); }
 
-#player-wins, #computer-wins {
+#player1-wins, #player2-wins {
   padding: 35px;
   font-size: 18px;
 }
