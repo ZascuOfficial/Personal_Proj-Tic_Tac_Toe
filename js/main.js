@@ -70,6 +70,8 @@ const checkWinner = () => {
     ) {
       isDead = true;
       playerOneWins++;
+
+      alert('Player 1 has won!');
     }
 
     if (
@@ -79,9 +81,14 @@ const checkWinner = () => {
     ) {
       isDead = true;
       playerTwoWins++;
+
+      alert('Player 2 has won!');
     }  
 
-    if (spaces.every(space => space !== null))
+    if (spaces.every(space => space !== null)) {
       isDead = true;
+
+      alert('It\'s a tie!');
+    }
   }
 };
