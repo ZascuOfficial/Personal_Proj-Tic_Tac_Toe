@@ -89,6 +89,7 @@ const checkWinner = () => {
       isDead = true;
 
       alert('It\'s a tie!');
+      return;
     }
   }
 };
